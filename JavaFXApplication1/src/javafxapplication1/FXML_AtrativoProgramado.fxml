@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="javafxapplication1.FXML_AtrativoProgramadoController">
+   <children>
+      <Text fill="WHITE" layoutX="70.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="743.0" fitWidth="1313.0" layoutX="10.0" layoutY="-1.0">
+         <image>
+            <Image url="@Imagens/viva-dominguinhos-fh-studios-220517-15-.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00faff" height="714.0" layoutX="24.0" layoutY="23.0" opacity="0.46" stroke="BLACK" strokeType="INSIDE" width="660.0" />
+      <Text layoutX="74.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar Atrativo Turistico - Evento Programado">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#0a0a0a" layoutX="53.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo do Evento Programado:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logradouro do Endereço:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="522.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnVoltar" text="Voltar" />
+      <Button layoutX="600.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnCadastrar" text="Cadastrar" />
+      <Text layoutX="450.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data fim:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="93.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data início:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="70.0" layoutY="301.0" mnemonicParsing="false" selected="true" text="Feira">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tipoEventoGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="201.0" layoutY="301.0" mnemonicParsing="false" text="Festa" toggleGroup="$tipoEventoGroup">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="tfDataInicio" layoutX="53.0" layoutY="185.0" prefHeight="36.0" prefWidth="210.0" />
+      <TextField fx:id="tfDataFim" layoutX="406.0" layoutY="185.0" prefHeight="36.0" prefWidth="210.0" />
+      <Text layoutX="53.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número do Endereço:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro do Endereço:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfNumeroEndereco" layoutX="53.0" layoutY="496.0" prefHeight="33.0" prefWidth="237.0" />
+      <TextField fx:id="tfBairroEndereco" layoutX="48.0" layoutY="603.0" prefHeight="33.0" prefWidth="237.0" />
+      <TextField fx:id="tfLogradouroEndereço" layoutX="57.0" layoutY="393.0" prefHeight="33.0" prefWidth="237.0" />
+   </children>
+</AnchorPane>
