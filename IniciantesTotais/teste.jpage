@@ -1,0 +1,20 @@
+/*class meuObjeto {
+	String nome;
+	int idade;
+	String telefone;	
+}
+
+meuObjeto amigo = new meuObjeto();
+amigo.nome = "Waldir";
+amigo.idade = 20;
+amigo.telefone = "981735754";
+
+System.out.println(amigo.nome);
+System.out.println(amigo.idade);
+System.out.println(amigo.telefone);*/
+printa cannot be resolved or is not a fieldclass projeto {
+	String nome;
+}
+projeto printa = new projeto();
+printa.nome = "Alo Mundo";
+System.out.println(printa.nome)
